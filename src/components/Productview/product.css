@@ -1,0 +1,121 @@
+.swiper-container {
+    width: 500px;
+    
+}
+
+.swiper-pagination {
+    bottom: 0;
+    padding-bottom: 10px;
+}
+
+.swiper-wrapper {
+    padding-inline-start: 0;
+/*    justify-content: center;*/
+}
+
+.product-images-slider {
+/*    width: 662px;*/
+    padding: 2px;
+    outline: none;
+    height: 500px;
+    margin-bottom: 18px;
+}
+.swiper-slide {
+    /*      padding-top: 70%;*/
+    
+    overflow: hidden;
+    position: relative;
+}
+.swiper-slide-active{
+
+   border-color: white; 
+}
+
+
+.main-slider{
+/*  padding: 10px;  */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+
+.main-slider img {
+    width: 100%;
+    height: 100%;
+border-radius: 15px
+/*    display: inline-block;*/
+/*    object-fit: cover;*/
+   
+}
+
+
+ .swiper-button-prev {
+      
+      top: 94% !important;
+      /*transform: rotate(90deg);
+      transform-origin: left center;*/
+     left: 84% !important;
+    }
+    .swiper-button-next {
+      top: 94% !important;
+     /* transform: rotate(90deg);
+      transform-origin: left center;*/
+      right: 0;
+    }
+
+
+
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+/*    background: rgba(255, 255, 255, 0.6);*/
+   
+}
+
+.swiper-slide {
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+#thumbs{
+    justify-content: center;
+
+    align-items: center;
+}
+
+.product-images-slider-thumbs{
+  width: 80%;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.product-images-slider-thumbs-wrapper {
+    position: relative;
+/*  width: 100px;*/
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  border: none;
+/*  border: 1px solid #ddd;*/
+/*  padding: 2px;*/
+}
+
+.product-images-slider-thumbs-wrapper img {
+     width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    opacity: 0.6;
+/*    display: inline-block;*/
+/*    object-fit: cover;*/
+}
+
+.swiper-slide-thumb-active {
+    border-radius: 8px;
+    border-color: #00ab55;
+}
+.swiper-slide-thumb-active img{
+    opacity: 1;
+}

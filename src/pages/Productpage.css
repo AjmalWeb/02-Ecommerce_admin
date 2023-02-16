@@ -1,0 +1,45 @@
+label {
+  display: flex;
+  padding: 5px 0;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+}
+
+input[type="radio"] {
+  opacity: 0;
+  display: hidden;
+}
+
+.value {
+/*  background: paleturquoise;*/
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.value:hover {
+/*  background: rgba(169, 10, 156, 0.1);*/
+opacity: 0.8;
+
+}
+
+.checked {
+  z-index: 10;
+  display: none;
+}
+
+input[type="radio"]:checked ~ .value {
+  background: white;
+  scale:1.1;
+  transition: 0.4s;
+}
+
+input[type="radio"]:checked ~ .value .checked {
+  display: block;
+}
